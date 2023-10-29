@@ -99,8 +99,13 @@ h1 {
 .content {
   display: inline;
   padding: 10px; /* Adjust the padding as needed */
+  margin-left: 0;
 }
 
+#about-me {
+  padding: 10px;
+  padding-right: 50px;
+}
 .title {
   padding-left: 180px;
   text-align: right;
@@ -112,4 +117,101 @@ h1 {
 
 .content p {
   margin-bottom: 20px;
+  margin-left: 80px;
+}
+
+#about-section.content {
+  padding-left: 0px;
+}
+
+#projectsGrid {
+  margin: 0px 5%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "website website"
+    "webApp weatherApp"
+    "budgetTracker blogTheme";
+}
+
+#website {
+  grid-area: website;
+  background-image: url(images/website2.jpg);
+  color: white;
+}
+
+#webApp {
+  grid-area: webApp;
+  background-image: url(images/to-do-list.png);
+  color: white;
+}
+
+#weatherApp {
+  grid-area: weatherApp;
+  background-image: url(images/weather-app.png);
+  color: white;
+}
+
+#budgetTracker {
+  grid-area: budgetTracker;
+  background-image: url(images/budget-tracker.jpg);
+  color: white;
+}
+
+#blogTheme {
+  grid-area: blogTheme;
+  background-image: url(images/blog-theme.jpg);
+  color: white;
+}
+
+.categoryGridArea {
+  background-position: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+#projectsGrid h3,
+h5 {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.heading {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-bottom: 5px solid rgb(56, 27, 27);
+}
+
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#contact-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+#contact-details li {
+  margin-right: 140px;
+  margin-left: 80px;
+}
+
+#contact-details a {
+  text-decoration: none;
+  color: #021f30;
+}
+
+.page-wrapper {
+  align-items: center;
 }
