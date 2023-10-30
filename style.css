@@ -1,5 +1,7 @@
 :root {
-  --fontColour: #191919;
+  --backgroundtitle: #191919;
+  --backgroundColour: #d9d3d3;
+  --fontColour: white;
 }
 
 @media (max-width: 767px) {
@@ -26,20 +28,27 @@
     font-size: 14px;
     line-height: 1.5;
   }
+
+  #contact-details ul li {
+    display: list-item;
+  }
 }
+
 * {
   box-sizing: border-box;
 }
 
+/*Style for body*/
 body {
   margin: 0;
   padding: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
-  background-color: #d9d3d3;
+  background-color: var(--backgroundColour);
 }
 
+/*Style for headings*/
 h1,
 h3,
 h4,
@@ -48,10 +57,12 @@ h6 {
   margin: 0;
 }
 
+/*Paragrapghs*/
 p {
   margin: 0;
 }
 
+/*Hero section*/
 .hero-banner {
   height: 200px;
   width: 100%;
@@ -66,6 +77,7 @@ p {
   right: 50px;
 }
 
+/*Style for header*/
 header nav {
   padding-top: 5px;
   margin-right: 20px;
@@ -87,17 +99,18 @@ header {
   align-items: center;
   padding: 10px;
   background-color: #333;
-  color: white;
+  color: var(--fontColour);
   padding-left: 0%;
 }
 
+/*Style for navigation bar*/
 nav li {
   margin-right: 10px;
 }
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: var(--fontColour);
   position: relative;
 }
 
@@ -110,65 +123,54 @@ nav a::after {
   position: absolute;
 }
 
+/*Style for heading*/
 h1 {
-  background-color: var(--fontColour);
-  color: white;
+  background-color: var(--backgroundtitle);
+  color: var(--fontColour);
   display: inline-block;
   padding: 10px;
   margin: 0;
   padding-left: 80px;
 }
 
+/*Style for page wrapper*/
+.page-wrapper {
+  display: inline;
+}
+
+/*Style for page section*/
 .page-section {
   display: flex;
   align-items: center;
-}
-
-.title,
-.content {
-  display: inline;
-  padding: 10px; /* Adjust the padding as needed */
-  margin-left: 0;
   position: relative;
 }
 
-#contact-me .title,
-#about-me .title,
-#work .title {
-  padding-left: 160px;
-}
 .title {
-  background-color: var(--fontColour);
-  color: white;
-  display: inline-block;
+  background-color: var(--backgroundtitle);
+  color: var(--fontColour);
   padding: 10px;
   margin: 0;
-  padding-left: 80px;
-  width: 256.44px;
+  padding-left: 180px;
+  text-align: right;
 }
 
 #about-me {
   padding: 10px;
   padding-right: 50px;
 }
-.title {
-  padding-left: 180px;
-  text-align: right;
-}
-
-.content {
-  padding-right: 100px;
-}
 
 .content p {
-  margin-bottom: 20px;
-  margin-left: 100px;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
+/*Style for about section*/
 #about-section.content {
   padding-left: 0px;
 }
 
+/*Portofolio section*/
 #projectsGrid {
   margin: 0px 5%;
   width: 100%;
@@ -233,11 +235,13 @@ h5 {
   border-bottom: 5px solid rgb(56, 27, 27);
 }
 
+/*Style for contact section*/
 #contact-details {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  position: relative;
 }
 
 #contact-details ul {
@@ -245,18 +249,15 @@ h5 {
   padding: 0;
   margin: 0;
   display: flex;
+  position: absolute;
 }
 
 #contact-details li {
-  margin-right: 140px;
-  margin-left: 80px;
+  margin-right: 60px;
+  margin-left: 60px;
 }
 
 #contact-details a {
   text-decoration: none;
   color: #021f30;
-}
-
-.page-wrapper {
-  display: inline;
 }
