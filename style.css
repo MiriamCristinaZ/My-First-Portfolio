@@ -1,3 +1,32 @@
+:root {
+  --fontColour: #191919;
+}
+
+@media (max-width: 767px) {
+  header nav {
+    display: list-item;
+  }
+  #projectsGrid {
+    display: list-item;
+  }
+  body {
+    font-size: 16px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -8,10 +37,10 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
+  background-color: #d9d3d3;
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -82,7 +111,7 @@ nav a::after {
 }
 
 h1 {
-  background-color: #191919;
+  background-color: var(--fontColour);
   color: white;
   display: inline-block;
   padding: 10px;
@@ -92,7 +121,7 @@ h1 {
 
 .page-section {
   display: flex;
-  align-items: center; /* Vertically align the content */
+  align-items: center;
 }
 
 .title,
@@ -100,6 +129,22 @@ h1 {
   display: inline;
   padding: 10px; /* Adjust the padding as needed */
   margin-left: 0;
+  position: relative;
+}
+
+#contact-me .title,
+#about-me .title,
+#work .title {
+  padding-left: 160px;
+}
+.title {
+  background-color: var(--fontColour);
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+  padding-left: 80px;
+  width: 256.44px;
 }
 
 #about-me {
@@ -117,7 +162,7 @@ h1 {
 
 .content p {
   margin-bottom: 20px;
-  margin-left: 80px;
+  margin-left: 100px;
 }
 
 #about-section.content {
@@ -213,5 +258,5 @@ h5 {
 }
 
 .page-wrapper {
-  align-items: center;
+  display: inline;
 }
