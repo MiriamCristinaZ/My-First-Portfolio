@@ -30,4 +30,6 @@ GitHub: MiriamCristinaZ
 Twitter: @myusername
 Spotify: Spotify Profile
 
+In order to visualise my deployed portofolio follow this link:
+
 Feel free to reach out to me for any inquiries or further information regarding my work and this portfolio website. I'm here to help and excited to connect with you!
