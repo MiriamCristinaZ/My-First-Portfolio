@@ -4,6 +4,7 @@
   --fontColour: white;
 }
 
+/*Style for smaller screen*/
 @media (max-width: 767px) {
   header nav {
     display: list-item;
@@ -25,12 +26,36 @@
   }
 
   p {
+    display: flex;
     font-size: 14px;
-    line-height: 1.5;
+    /* line-height: 1.5; */
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  #contact-details ul li {
-    display: list-item;
+  #contact-details ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact-details {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .content {
+    margin-left: 120px;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .title {
+    display: none;
   }
 }
 
@@ -59,6 +84,9 @@ h6 {
 
 /*Paragrapghs*/
 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
 }
 
@@ -145,24 +173,45 @@ h1 {
   position: relative;
 }
 
-.title {
+#about-me .title {
   background-color: var(--backgroundtitle);
   color: var(--fontColour);
   padding: 10px;
-  margin: 0;
+  /* margin: 0; */
   padding-left: 180px;
   text-align: right;
 }
 
+#work .title {
+  background-color: var(--backgroundtitle);
+  color: var(--fontColour);
+  padding: 10px;
+  margin: 10px;
+  padding-left: 200px;
+  text-align: right;
+}
+
+#contact-me .title {
+  background-color: var(--backgroundtitle);
+  color: var(--fontColour);
+  padding: 10px;
+  margin: 10px;
+  padding-left: 175px;
+  text-align: right;
+}
 #about-me {
   padding: 10px;
   padding-right: 50px;
 }
 
+.content {
+  margin-left: 0;
+}
 .content p {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   margin-left: 60px;
-  margin-right: 60px;
+  margin-right: 50px;
+  padding-left: 80px;
 }
 
 /*Style for about section*/
@@ -171,6 +220,10 @@ h1 {
 }
 
 /*Portofolio section*/
+#work {
+  margin-bottom: 30px;
+}
+
 #projectsGrid {
   margin: 0px 5%;
   width: 100%;
@@ -259,5 +312,11 @@ h5 {
 
 #contact-details a {
   text-decoration: none;
-  color: #021f30;
+  color: var(--fontColour);
+}
+
+#contact-details ul {
+  background-color: var(--backgroundtitle);
+  border-radius: 30px;
+  padding: 50px;
 }
